@@ -1,13 +1,7 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import './App.css'
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div>Enterprise Dashboard</div>
-  )
+  return <AppRoutes />;
 }
 
-export default App
+export default App;
