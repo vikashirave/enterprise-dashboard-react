@@ -1,14 +1,17 @@
+import { Box } from "@mui/material";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 
 export default function AppLayout({ children }) {
   return (
-    <div style={{ display: "flex", height: "100vh" }}>
+    <Box sx={{ display: "flex", height: "100vh" }}>
       <Sidebar />
-      <div style={{ flex: 1 }}>
+      <Box sx={{ flex: 1 }}>
         <Header />
-        <main style={{ padding: "16px" }}>{children}</main>
-      </div>
-    </div>
+        <Box component="main" sx={{ p: 2 }}>
+          {children}
+        </Box>
+      </Box>
+    </Box>
   );
 }

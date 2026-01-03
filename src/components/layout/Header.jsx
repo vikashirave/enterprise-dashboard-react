@@ -1,7 +1,13 @@
+import { AppBar, Toolbar, Typography } from "@mui/material";
+
 export default function Header() {
   return (
-    <header style={{ padding: "12px", borderBottom: "1px solid #ddd" }}>
-      <strong>Enterprise Dashboard</strong>
-    </header>
+    <AppBar position="static" elevation={1}>
+      <Toolbar>
+        <Typography variant="h6">
+          Enterprise Dashboard
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
